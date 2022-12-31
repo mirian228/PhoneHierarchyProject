@@ -1,0 +1,16 @@
+20:22:28:067 [main] INFO  Main.Main - Words excluding nulls: [truck, car, phone, list, school, lecture]
+20:22:28:080 [main] INFO  Main.Main - [Phone, Wired phone, Cell phone, Car, Truck, Boat, Monkey, Elephant, Lion]
+20:22:28:083 [main] INFO  Main.Main - [[Mirian Surmanidze, 21, Georgia, Batumi, code=+995, phoneNumber=555100100]
+, [Nika Shainidze, 25, Georgia, Batumi, code=+995, phoneNumber=577200200]
+]
+20:22:28:084 [main] INFO  Main.Main - These are even numbers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+20:22:28:086 [main] INFO  Main.Main - A15 Bionic processor
+20:22:28:086 [main] INFO  Main.Main - Snap Dragon
+20:22:28:087 [main] INFO  Main.Main - A15 Bionic processor
+20:22:28:088 [main] INFO  Main.Main - 157ABBACD@10
+20:22:28:104 [main] INFO  Main.Main - 15
+20:30:48:804 [main] INFO  Main.Main - Words excluding nulls: [truck, car, phone, list, school, lecture]
+20:30:48:812 [main] INFO  Main.Main - [Phone, Wired phone, Cell phone, Car, Truck, Boat, Monkey, Elephant, Lion]
+20:30:48:814 [main] INFO  Main.Main - [[Mirian Surmanidze, 21, Georgia, Batumi, code=+995, phoneNumber=555100100]
+, [Nika Shainidze, 25, Georgia, Batumi, code=+995, phoneNumber=577200200]
+]

@@ -1,0 +1,17 @@
+17:36:01:464 [main] INFO  Main.Main - Test: text
+17:36:51:846 [main] INFO  Main.Main - Test: text
+17:37:38:154 [main] INFO  Main.Main - Test: text
+17:37:38:158 [main] INFO  Main.Main - Calling Mirian Surmanidze
+17:47:33:430 [main] INFO  Lambda.MainForLambda - Test: text
+17:47:33:436 [main] INFO  Lambda.MainForLambda - Calling Mirian
+17:51:33:024 [main] INFO  Lambda.MainForLambda - Test: text
+17:51:33:027 [main] INFO  Lambda.MainForLambda - Calling Mirian
+17:53:37:718 [main] INFO  Lambda.MainForLambda - Test: text
+17:53:37:721 [main] INFO  Lambda.MainForLambda - Calling Mirian
+17:55:28:158 [main] INFO  Lambda.MainForLambda - Test: text
+17:55:28:161 [main] INFO  Lambda.MainForLambda - Calling Mirian
+18:06:32:203 [main] INFO  Lambda.MainForLambda - Test: text
+18:06:32:214 [main] INFO  Lambda.MainForLambda - Calling Mirian
+18:06:42:463 [main] INFO  Lambda.MainForLambda - Key: 1	Value: D
+18:06:42:466 [main] INFO  Lambda.MainForLambda - Key: 2	Value: E
+18:06:42:466 [main] INFO  Lambda.MainForLambda - Key: 3	Value: F

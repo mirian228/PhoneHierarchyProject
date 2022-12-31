@@ -2,6 +2,8 @@ package hardware;
 
 import java.util.Objects;
 
+
+
 public class Battery {
 	private String batteryModel;
 	private int batteryPercentage;
@@ -84,5 +86,5 @@ public class Battery {
 	}
 	
 	
-
+	
 }

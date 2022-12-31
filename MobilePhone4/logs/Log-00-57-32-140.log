@@ -1,0 +1,10 @@
+00:54:52:936 [main] INFO  FileHomework.Main - {which=1, Hello=1, this=1, length=1, words=2, is=2, text=2, my=1, ten=1, creative=1}
+00:54:52:944 [main] INFO  FileHomework.Main - words: [which, Hello, this, length, words, is, text, my, ten, creative]
+00:54:52:944 [main] INFO  FileHomework.Main - size of unique words: 10
+00:55:20:115 [main] INFO  FileHomework.Main - {which=1, Hello=1, this=1, length=1, words=2, is=2, text=2, my=1, ten=1, creative=1}
+00:55:20:122 [main] INFO  FileHomework.Main - words: [which, Hello, this, length, words, is, text, my, ten, creative]
+00:55:20:122 [main] INFO  FileHomework.Main - size of unique words: 10
+00:56:07:984 [main] INFO  FileHomework.Main - {which=1, Hello=1, this=1, length=1, words=2, is=2, text=2, my=1, ten=1, creative=1}
+00:56:07:990 [main] INFO  FileHomework.Main - words: [which, Hello, this, length, words, is, text, my, ten, creative]
+00:56:07:990 [main] INFO  FileHomework.Main - size of unique words: 10
+00:57:32:135 [main] INFO  FileHomework.Main - {which=1, Hello=1, this=1, length=1, words=2, is=2, text=2, my=1, ten=1, creative=1}

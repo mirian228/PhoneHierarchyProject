@@ -1,0 +1,9 @@
+01:40:05:825 [main] INFO  FileHomework.Main - {which=1, Hello=2, HeLLo=1, this=1, length=1, words=2, is=2, TeXt=1, text=2, my=1, ten=1, creative=1}.
+01:40:05:833 [main] INFO  FileHomework.Main - words: [which, Hello, HeLLo, this, length, words, is, TeXt, text, my, ten, creative].
+01:40:05:833 [main] INFO  FileHomework.Main - number of unique words: 12.
+01:40:20:302 [main] INFO  FileHomework.Main - {which=1, Hello=2, HeLLo=1, this=1, length=1, words=2, is=2, TeXt=1, text=2, my=1, ten=1, creative=1}.
+01:40:20:306 [main] INFO  FileHomework.Main - words: [which, Hello, HeLLo, this, length, words, is, TeXt, text, my, ten, creative].
+01:40:20:307 [main] INFO  FileHomework.Main - number of unique words: 12.
+01:40:53:937 [main] INFO  FileHomework.Main - {which=1, Hello=2, HeLLo=1, this=1, length=1, words=2, is=2, TeXt=1, text=2, my=1, ten=1, creative=1}.
+01:40:53:942 [main] INFO  FileHomework.Main - words: [which, Hello, HeLLo, this, length, words, is, TeXt, text, my, ten, creative].
+01:40:53:943 [main] INFO  FileHomework.Main - number of unique words: 12.

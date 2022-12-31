@@ -1,0 +1,17 @@
+19:02:30:617 [main] INFO  Main.Main - operatingSystem 
+19:02:30:623 [main] INFO  Main.Main - processor 
+19:02:30:623 [main] INFO  Main.Main - battery 
+19:02:30:623 [main] INFO  Main.Main - charger 
+19:02:30:623 [main] INFO  Main.Main - user 
+19:02:30:624 [main] INFO  Main.Main - camera 
+19:02:30:624 [main] INFO  Main.Main - applications 
+19:02:30:624 [main] INFO  Main.Main - LOGGER 
+19:04:19:113 [main] INFO  Main.Main - Words excluding nulls: [truck, car, phone, list, school, lecture]
+19:04:19:120 [main] INFO  Main.Main - [Phone, Wired phone, Cell phone, Car, Truck, Boat, Monkey, Elephant, Lion]
+19:04:19:122 [main] INFO  Main.Main - [[Mirian Surmanidze, 21, Georgia, Batumi, code=+995, phoneNumber=555100100]
+, [Nika Shainidze, 25, Georgia, Batumi, code=+995, phoneNumber=577200200]
+]
+19:04:19:123 [main] INFO  Main.Main - These are even numbers: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+19:04:19:125 [main] INFO  Main.Main - A15 Bionic processor
+19:04:19:126 [main] INFO  Main.Main - Snap Dragon
+19:04:19:126 [main] INFO  Main.Main - A15 Bionic processor

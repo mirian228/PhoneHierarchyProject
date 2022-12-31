@@ -1,0 +1,9 @@
+02:00:39:644 [main] INFO  FileHomework.Main - words: [which, this, length, words, is, hello, text, my, ten, creative].
+02:00:39:662 [main] INFO  FileHomework.Main - number of unique words: 10.
+02:03:00:262 [main] INFO  FileHomework.Main - Display text: hello this is my creative text which length is ten words hello text words hello text
+02:03:00:266 [main] INFO  FileHomework.Main - {which=1, this=1, length=1, words=2, is=2, hello=3, text=3, my=1, ten=1, creative=1}.
+02:03:00:268 [main] INFO  FileHomework.Main - words: [which, this, length, words, is, hello, text, my, ten, creative].
+02:03:00:268 [main] INFO  FileHomework.Main - number of unique words: 10.
+02:04:11:408 [main] INFO  FileHomework.Main - Display lowercase text: hello this is my creative text which length is ten words hello text words hello text
+02:04:11:413 [main] INFO  FileHomework.Main - {which=1, this=1, length=1, words=2, is=2, hello=3, text=3, my=1, ten=1, creative=1}.
+02:04:11:415 [main] INFO  FileHomework.Main - words: [which, this, length, words, is, hello, text, my, ten, creative].

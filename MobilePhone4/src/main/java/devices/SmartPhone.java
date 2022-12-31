@@ -23,6 +23,7 @@ import interfaces.ICharge;
 import interfaces.IMessage;
 import interfaces.IRotate;
 import interfaces.IScreen;
+
 import users.User;
 
 public class SmartPhone extends Phone implements IScreen, ICall, IMessage, ICharge, IRotate, ICalculate{
@@ -413,6 +414,8 @@ public class SmartPhone extends Phone implements IScreen, ICall, IMessage, IChar
 	public void rotateScreen() {
 		
 	}
+
+	
 
 
 	

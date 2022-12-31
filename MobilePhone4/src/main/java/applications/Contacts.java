@@ -1,18 +1,48 @@
 package applications;
 
+import java.util.List;
+
+import constants.CountryPhoneCodes;
+import users.User;
+
 public class Contacts {
-	private String[] contacts;
-
-	public Contacts(String[] contacts) {
-		this.contacts = contacts;
+	
+	User user;
+	CountryPhoneCodes code;
+	Integer phoneNumber;
+	
+	
+	
+	public Contacts(User user, CountryPhoneCodes code, Integer phoneNumber) {
+		this.user = user;
+		this.code = code;
+		this.phoneNumber = phoneNumber;
 	}
 
-	public String[] getContacts() {
-		return contacts;
+
+
+	public User getUser() {
+		return user;
 	}
 
-	public void setContacts(String[] contacts) {
-		this.contacts = contacts;
+
+
+	@Override
+	public String toString() {
+		return "[" + user.getUserName() + ", " + user.getUserAge() + ", " + user.getUserNationality() + ", " + user.getUserAdress() + ", " +
+				"code=" + code.getCountryCode() + ", phoneNumber=" + phoneNumber + "]" + "\n";
 	}
+	
+
+
+
+
+
+
+	
+
+	
+
+	
 
 }

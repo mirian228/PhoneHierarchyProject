@@ -1,0 +1,28 @@
+20:45:54:298 [main] INFO  Lambda.MainForLambda - Key: 3	Value: F
+20:45:54:339 [main] INFO  Lambda.MainForLambda - 5.55
+20:45:54:339 [main] INFO  Lambda.MainForLambda - Key: 1	Value: D
+20:45:54:340 [main] INFO  Lambda.MainForLambda - Key: 2	Value: E
+20:45:54:340 [main] INFO  Lambda.MainForLambda - Key: 3	Value: F
+17:46:55:616 [main] INFO  Main.Main - These are even numbers: [2, 4, 6, 8, 10, 12, 14]
+17:47:29:111 [main] INFO  Main.Main - [Contacts [user=Mirian Surmanidze
+21
+Georgia
+Batumi], Contacts [user=Nika Shainidze
+25
+Georgia
+Batumi]]
+17:47:29:115 [main] INFO  Main.Main - These are even numbers: [2, 4, 6, 8, 10, 12, 14]
+17:48:15:045 [main] INFO  Main.Main - [Contacts [user=Mirian Surmanidze
+21
+Georgia
+Batumi], Contacts [user=Nika Shainidze
+25
+Georgia
+Batumi]]
+17:48:15:051 [main] INFO  Main.Main - These are even numbers: [2, 4, 6, 8, 10, 12, 14]
+17:48:15:053 [main] INFO  Main.Main - [A15 Bionic processor
+6
+3.23, A15 Bionic processor
+6
+3.23]
+17:52:06:673 [main] INFO  Main.Main - These are even numbers: [2, 4, 6, 8, 10, 12, 14]

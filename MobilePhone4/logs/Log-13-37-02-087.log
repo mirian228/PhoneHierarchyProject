@@ -1,0 +1,27 @@
+02:04:11:415 [main] INFO  FileHomework.Main - number of unique words: 10.
+02:04:13:765 [main] INFO  FileHomework.Main - Display lowercase text: hello this is my creative text which length is ten words hello text words hello text
+02:04:13:771 [main] INFO  FileHomework.Main - {which=1, this=1, length=1, words=2, is=2, hello=3, text=3, my=1, ten=1, creative=1}.
+02:04:13:772 [main] INFO  FileHomework.Main - words: [which, this, length, words, is, hello, text, my, ten, creative].
+02:04:13:772 [main] INFO  FileHomework.Main - number of unique words: 10.
+13:37:02:072 [main] INFO  Main.Main - 
+Mirian Surmanidze
+21
+Georgia
+Tbel Abuseridze Street
+
+13:37:02:074 [main] INFO  Main.Main - Jemal Qarcivadze
+50
+Georgia
+Loria Street
+
+13:37:02:075 [main] INFO  Main.Main - 465983646
+
+13:37:02:076 [main] INFO  Main.Main - -831497802
+
+13:37:02:076 [main] INFO  Main.Main - 465983646
+13:37:02:077 [main] INFO  Main.Main - true
+
+13:37:02:077 [main] INFO  Main.Main - -634435049
+
+13:37:02:077 [main] INFO  Main.Main - 685518902
+

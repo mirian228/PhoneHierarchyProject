@@ -1,0 +1,17 @@
+18:16:34:403 [main] INFO  Lambda.MainForLambda - true
+18:16:34:418 [main] INFO  Lambda.MainForLambda - 60
+18:16:34:419 [main] INFO  Lambda.MainForLambda - Key: 1	Value: D
+18:16:34:419 [main] INFO  Lambda.MainForLambda - Key: 2	Value: E
+18:16:34:419 [main] INFO  Lambda.MainForLambda - Key: 3	Value: F
+18:16:34:421 [main] INFO  Lambda.MainForLambda - 5.55
+18:17:41:059 [main] INFO  Lambda.MainForLambda - Test: text
+18:17:41:062 [main] INFO  Lambda.MainForLambda - Calling Mirian
+18:17:41:063 [main] INFO  Lambda.MainForLambda - true
+18:17:41:063 [main] INFO  Lambda.MainForLambda - 60
+18:17:41:063 [main] INFO  Lambda.MainForLambda - Key: 1	Value: D
+18:17:41:063 [main] INFO  Lambda.MainForLambda - Key: 2	Value: E
+18:17:41:064 [main] INFO  Lambda.MainForLambda - Key: 3	Value: F
+18:17:41:064 [main] INFO  Lambda.MainForLambda - 5.55
+18:17:41:065 [main] INFO  Lambda.MainForLambda - 5
+18:17:51:064 [main] INFO  Lambda.MainForLambda - Test: text
+18:17:51:068 [main] INFO  Lambda.MainForLambda - Calling Mirian
