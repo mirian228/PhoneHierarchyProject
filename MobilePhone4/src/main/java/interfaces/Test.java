@@ -1,4 +1,5 @@
 package interfaces;
+
 @FunctionalInterface
 public interface Test {
 

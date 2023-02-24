@@ -8,93 +8,81 @@ import interfaces.IMessage;
 import users.User;
 
 public class Telegram extends Applications implements IMessage {
+
 	private int numberOfChats;
 	private int numberOfChannels;
 	private User user;
 	private Camera camera;
 	private Contacts contacts;
-	
+
 	public final static Logger LOGGER = LogManager.getLogger(Telegram.class);
-	
-	public Telegram(boolean ios, boolean android, int size, String releaseDate, int notifications,
-			int numberOfChats, int numberOfChannels) {
+
+	public Telegram(boolean ios, boolean android, int size, String releaseDate, int notifications, int numberOfChats,
+			int numberOfChannels) {
 		super(ios, android, size, releaseDate, notifications);
 		this.numberOfChats = numberOfChats;
 		this.numberOfChannels = numberOfChannels;
-		
+
 	}
 
 	public Telegram(boolean ios, boolean android) {
 		super(ios, android);
-		}
+	}
 
-	public Telegram() {}
-	
-	
+	public Telegram() {
+	}
+
 	public void createAccount(String userName) {
-		if(userName.length() <= 15) {
-		user.setUserName(userName);
-		LOGGER.info("The account " + user.getUserName() + " has been created.");
-		}
-		else {
+		if (userName.length() <= 15) {
+			user.setUserName(userName);
+			LOGGER.info("The account " + user.getUserName() + " has been created.");
+		} else {
 			LOGGER.info("The permissible length of user name is 15 letters");
 		}
 	}
-	
+
 	public void takePhoto() {
 		camera.takephoto();
 	}
-	
+
 	public void search(String input) {
-		
+
 	}
-	
+
 	public void clearDataStorage() {
 		LOGGER.info("The storage has been cleared");
 	}
-	
+
 	public String changeLanguage(String language) {
-		return "The language has been changed to " +  language;
+		return "The language has been changed to " + language;
 	}
-	
+
 	public String saveMessage(String message) {
 		return "The message: " + message + " has been saved";
 	}
-	
-	
-	
-	
-	
-	
-	
+
 	@Override
 	public void sendMessage(String text) {
 		LOGGER.info("The message: " + text + " has been sent to " + user + ".");
 
-		}
+	}
 
 	public int getNumberOfChats() {
 		return numberOfChats;
 	}
 
-	
 	public void setNumberOfChats(int numberOfChats) {
 		this.numberOfChats = numberOfChats;
 	}
-
 
 	public int getNumberOfChannels() {
 		return numberOfChannels;
 	}
 
-
 	public void setNumberOfChannels(int numberOfChannels) {
 		this.numberOfChannels = numberOfChannels;
 	}
 
-	
-	
-	
 	public User getUser() {
 		return user;
 	}
@@ -174,11 +162,9 @@ public class Telegram extends Applications implements IMessage {
 		super.setNotifications(notifications);
 	}
 
-
-
-	
-	
-	
-	
-	
+	@Override
+	public String toString() {
+		return "Telegram [numberOfChats=" + numberOfChats + ", numberOfChannels=" + numberOfChannels + ", user=" + user
+				+ ", camera=" + camera + ", contacts=" + contacts + "]";
+	}
 }

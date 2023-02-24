@@ -2,34 +2,26 @@ package hardware;
 
 import java.util.Objects;
 
-
-
 public class Battery {
 	private String batteryModel;
 	private int batteryPercentage;
 	private int batteryHealth;
 	private String batteryCapacity;
-	
-	
-	
-	public Battery (String batteryModel, int batteryPercentage, int batteryHealth, String batteryCapacity) {
+
+	public Battery(String batteryModel, int batteryPercentage, int batteryHealth, String batteryCapacity) {
 		this.batteryModel = batteryModel;
 		this.batteryPercentage = batteryPercentage;
 		this.batteryHealth = batteryHealth;
 		this.batteryCapacity = batteryCapacity;
-		}
-	
-	public Battery (){
-		 batteryModel = "Default";
-		 batteryPercentage = 35;
-		 batteryHealth = 100;
-		 batteryCapacity = "1000";
 	}
 
-	
-	
-	
-	
+	public Battery() {
+		batteryModel = "Default";
+		batteryPercentage = 35;
+		batteryHealth = 100;
+		batteryCapacity = "1000";
+	}
+
 	@Override
 	public String toString() {
 		return batteryModel + "\n" + batteryPercentage + "\n" + batteryHealth + "\n" + batteryCapacity;
@@ -84,7 +76,5 @@ public class Battery {
 	public void setBatteryCapacity(String batteryCapacity) {
 		this.batteryCapacity = batteryCapacity;
 	}
-	
-	
-	
+
 }

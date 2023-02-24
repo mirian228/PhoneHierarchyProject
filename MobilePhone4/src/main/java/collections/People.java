@@ -3,21 +3,21 @@ package collections;
 import java.util.Queue;
 
 public class People {
-	
+
 	private Queue<String> people;
-	
-	public People(){
-		
+
+	public People() {
+
 	}
-	
+
 	public void addNewPersonToQueue(String name) {
 		people.add(name);
 	}
-	
+
 	public void removeFirstPersonFromQueue(String name) {
 		people.poll();
 	}
-	
+
 	public void getFirstPersonFromQueue(String name) {
 		people.peek();
 	}
@@ -29,7 +29,5 @@ public class People {
 	public void setPeople(Queue<String> people) {
 		this.people = people;
 	}
-	
-	
-	
+
 }

@@ -1,6 +1,6 @@
 package exceptions;
 
-public class ArrayNegativeLengthException extends Exception{
+public class ArrayNegativeLengthException extends Exception {
 
 	/**
 	 * 

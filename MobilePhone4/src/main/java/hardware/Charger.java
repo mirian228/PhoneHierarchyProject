@@ -6,43 +6,35 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 import interfaces.ICharge;
 
-public class Charger implements ICharge{
+public class Charger implements ICharge {
 	private String chargerType;
 	private String chargerPower;
 	private String chargerFrequency;
 	private String outputPort;
 	private Scanner scanner;
-	
-	
+
 	public Charger(String chargerType, String chargerPower, String chargerFrequency, String outputPort) {
-		
+
 		this.chargerType = chargerType;
 		this.chargerPower = chargerPower;
 		this.chargerFrequency = chargerFrequency;
 		this.outputPort = outputPort;
-		}
-	
-	
+	}
+
 	public final static Logger LOGGER = LogManager.getLogger(Charger.class);
 
-	
 	@Override
 	public String toString() {
 		return chargerType + "\n" + chargerPower + "\n" + chargerFrequency + "\n" + outputPort;
 
 	}
 
-
 	@Override
 	public int hashCode() {
 		return Objects.hash(chargerFrequency, chargerPower, chargerType, outputPort);
 	}
-
-
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -58,12 +50,8 @@ public class Charger implements ICharge{
 				&& Objects.equals(outputPort, other.outputPort);
 	}
 
-
-
-
-	Charger() {}
-	
-	
+	Charger() {
+	}
 
 	public String getChargerType() {
 		return chargerType;
@@ -97,44 +85,31 @@ public class Charger implements ICharge{
 		this.outputPort = outputPort;
 	}
 
-
-
-
 	@Override
 	public void charge() throws NullPointerException {
 		scanner.next().toUpperCase();
 		try {
-		LOGGER.info("Do you want to charge your device?");
-		LOGGER.info("\"Y\" for yes and \"N\" for no");
-		if(scanner.next() == "Y") {
-			LOGGER.info("Your device is being charged");
-			
-		}
-		else if(scanner.next() == "N") {
-			LOGGER.info("Charge offer declined");
-		}
-		else if(scanner.equals(null)) 
-			{
-			throw new NullPointerException();
+			LOGGER.info("Do you want to charge your device?");
+			LOGGER.info("\"Y\" for yes and \"N\" for no");
+			if (scanner.next() == "Y") {
+				LOGGER.info("Your device is being charged");
+
+			} else if (scanner.next() == "N") {
+				LOGGER.info("Charge offer declined");
+			} else if (scanner.equals(null)) {
+				throw new NullPointerException();
+			} else {
+				LOGGER.info("You should input only \"Y\" or \"N\"");
 			}
-		else {
-			LOGGER.info("You should input only \"Y\" or \"N\"");	
-			}
-		}
-		catch(NullPointerException e) {
+		} catch (NullPointerException e) {
 			LOGGER.info("Answer can't be null");
 		}
-		
-		
+
 	}
-
-
-
 
 	@Override
 	public void disconnectFromCharger() {
-		
-		
+
 	}
 
 }

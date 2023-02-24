@@ -19,6 +19,12 @@ public class Instagram extends Applications {
 		this.bio = bio;
 	}
 
+	@Override
+	public String toString() {
+		return "Instagram [followers=" + followers + ", following=" + following + ", posts=" + posts + ", bio=" + bio
+				+ "]";
+	}
+
 	public Instagram(boolean ios, boolean android) {
 		super(ios, android);
 

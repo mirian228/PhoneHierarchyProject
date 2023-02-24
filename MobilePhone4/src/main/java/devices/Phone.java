@@ -1,6 +1,7 @@
 package devices;
 
 import java.util.Objects;
+
 public abstract class Phone {
 	private final String brand;
 	private final String model;
@@ -8,41 +9,31 @@ public abstract class Phone {
 	private final String dimensions;
 	private String displayType;
 	private String displaySize;
-		
-	
 
-	
-		Phone(String brand, String model, String weight, String dimensions) {
-		
+	Phone(String brand, String model, String weight, String dimensions) {
+
 		this.brand = brand;
 		this.model = model;
 		this.weight = weight;
 		this.dimensions = dimensions;
-		
-		
-		}	
-		Phone(String brand, String model, String weight, String dimensions, String displayType, String displaySize) {
-		
+
+	}
+
+	Phone(String brand, String model, String weight, String dimensions, String displayType, String displaySize) {
+
 		this.brand = brand;
 		this.model = model;
 		this.weight = weight;
 		this.dimensions = dimensions;
 		this.displayType = displayType;
 		this.displaySize = displaySize;
-		
-		}
-	
-	
+
+	}
+
 	@Override
 	public String toString() {
 		return brand + "\n" + model + "\n" + weight + "\n" + dimensions + "\n" + displayType + "\n" + displaySize;
 	}
-	
-	
-	
-	
-
-
 
 	@Override
 	public int hashCode() {
@@ -63,11 +54,10 @@ public abstract class Phone {
 				&& Objects.equals(model, other.model) && Objects.equals(weight, other.weight);
 	}
 
-
 	public String getBrand() {
 		return brand;
 	}
-	
+
 	public String getModel() {
 		return model;
 	}
@@ -75,38 +65,25 @@ public abstract class Phone {
 	public String getWeight() {
 		return weight;
 	}
-	
+
 	public String getDimensions() {
 		return dimensions;
 	}
-	
-
-
 
 	public String getDisplayType() {
 		return displayType;
 	}
 
-
-
 	public void setDisplayType(String displayType) {
 		this.displayType = displayType;
 	}
-
-
 
 	public String getDisplaySize() {
 		return displaySize;
 	}
 
-
-
 	public void setDisplaySize(String displaySize) {
 		this.displaySize = displaySize;
 	}
-	
-	
-	
 
-	
 }

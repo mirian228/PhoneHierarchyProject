@@ -7,26 +7,21 @@ public class User {
 	private int userAge;
 	private String userNationality;
 	private String userAdress;
-	
-	
-	public User(String userName, int userAge, String userNationality, String userAdress){
+
+	public User(String userName, int userAge, String userNationality, String userAdress) {
 		this.userName = userName;
 		this.userAge = userAge;
 		this.userNationality = userNationality;
 		this.userAdress = userAdress;
-		}
-	
-	public User(){
+	}
+
+	public User() {
 		userName = "Blank";
 		userAge = 0;
 		userNationality = "C";
 		userAdress = "Street";
 	}
 
-	
-	
-	
-	
 	@Override
 	public String toString() {
 		return userName + "\n" + userAge + "\n" + userNationality + "\n" + userAdress;

@@ -29,18 +29,17 @@ public class CellPhone extends Phone implements IScreen, ICall, IMessage, ICharg
 	private User user;
 	private Camera camera;
 	private Applications applications;
-	
+
 	private final static Logger LOGGER = LogManager.getLogger(CellPhone.class);
 
-	
-	public CellPhone(String brand, String model, String weight, String dimensions, 
-			 int numberOfButtons, String operatingSystem) {
+	public CellPhone(String brand, String model, String weight, String dimensions, int numberOfButtons,
+			String operatingSystem) {
 		super(brand, model, weight, dimensions);
 		this.numberOfButtons = numberOfButtons;
 		this.operatingSystem = operatingSystem;
-		
+
 	}
-	
+
 	public CellPhone(String brand, String model, String weight, String dimensions, String displayType,
 			String displaySize) {
 		super(brand, model, weight, dimensions, displayType, displaySize);
@@ -51,87 +50,62 @@ public class CellPhone extends Phone implements IScreen, ICall, IMessage, ICharg
 		super(brand, model, weight, dimensions, displayType, displaySize);
 		this.numberOfButtons = numberOfButtons;
 		this.operatingSystem = operatingSystem;
-		
+
 	}
 
 	public CellPhone(String brand, String model, String weight, String dimensions) {
 		super(brand, model, weight, dimensions);
-		
+
 	}
 
-	
 	@Override
-	public void call(String user, int[] phoneNumber) 
-	{   
-		for(int i = 0; i<phoneNumber.length; i++)
-		
-			try
-		{
-			if(phoneNumber.length > 15) 
-			{
-			throw new ArrayLengthException();
+	public void call(String user, int[] phoneNumber) {
+		for (int i = 0; i < phoneNumber.length; i++)
+
+			try {
+				if (phoneNumber.length > 15) {
+					throw new ArrayLengthException();
+				} else if (phoneNumber.length < 0) {
+					throw new ArrayNegativeLengthException();
+				} else if (user.length() < 4) {
+					throw new UserInstantiationException();
+				} else if (phoneNumber[i] < 0) {
+					throw new NegativeNumberException();
+
+				}
+
+			} catch (ArrayLengthException e) {
+				LOGGER.info("Array can't be bigger than 15");
+			} catch (ArrayNegativeLengthException e) {
+				LOGGER.info("Array can't have negative length");
+			} catch (UserInstantiationException e) {
+				LOGGER.info("User name can't be less than 4");
+			} catch (NegativeNumberException e) {
+				LOGGER.info("Phone number can't be negative");
 			}
-			else if (phoneNumber.length < 0) {
-			throw new ArrayNegativeLengthException();	
-			}
-			else if (user.length() < 4) {
-			throw new UserInstantiationException();	
-			}
-			else if ( phoneNumber[i] < 0 ) {
-			throw new NegativeNumberException();
-				
-			}
-		
-		}
-		catch(ArrayLengthException e) 
-		{ 
-			LOGGER.info("Array can't be bigger than 15");
-		}
-		catch(ArrayNegativeLengthException e) 
-		{
-			LOGGER.info("Array can't have negative length");
-		}
-		catch(UserInstantiationException e)
-		{
-			LOGGER.info("User name can't be less than 4");
-		}
-		catch(NegativeNumberException e)
-		{
-			LOGGER.info("Phone number can't be negative");
-		}
 	}
-	
-	
+
 	@Override
 	public void sendMessage(String text) {
 		LOGGER.info("The message: " + text + " has been sent to " + user + ".");
 
-		
 	}
-
-
 
 	@Override
 	public String toString() {
-		return operatingSystem + "\n" + numberOfButtons + "\n" + processor + "\n" + battery + "\n" +
-	charger + "\n" + user + "\n" + camera + "\n" + applications;
+		return operatingSystem + "\n" + numberOfButtons + "\n" + processor + "\n" + battery + "\n" + charger + "\n"
+				+ user + "\n" + camera + "\n" + applications;
 	}
 
-	
 	public Boolean installApplication(String applicationName) {
-		LOGGER.info("Application " + applicationName + " has been installed"); 
-		  return true;
-	  }
+		LOGGER.info("Application " + applicationName + " has been installed");
+		return true;
+	}
+
 	public Boolean uninstallApplication(String applicationName) {
 		LOGGER.info("Application " + applicationName + " has been uninstalled");
 		return true;
 	}
-	
-	
-	
-	
-	
-
 
 	@Override
 	public int hashCode() {
@@ -141,7 +115,6 @@ public class CellPhone extends Phone implements IScreen, ICall, IMessage, ICharg
 				processor, user);
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -157,7 +130,6 @@ public class CellPhone extends Phone implements IScreen, ICall, IMessage, ICharg
 				&& numberOfButtons == other.numberOfButtons && Objects.equals(operatingSystem, other.operatingSystem)
 				&& Objects.equals(processor, other.processor) && Objects.equals(user, other.user);
 	}
-
 
 	@Override
 	public void turnOffScreen() {
@@ -179,34 +151,25 @@ public class CellPhone extends Phone implements IScreen, ICall, IMessage, ICharg
 		LOGGER.info("The brightness of " + this.getModel() + " screen has been decreased");
 	}
 
-
-
 	@Override
 	public String getBrand() {
 		return super.getBrand();
 	}
-
-	
 
 	@Override
 	public String getModel() {
 		return super.getModel();
 	}
 
-	
-
 	@Override
 	public String getWeight() {
 		return super.getWeight();
 	}
 
-	
-
 	@Override
 	public String getDimensions() {
 		return super.getDimensions();
 	}
-
 
 	@Override
 	public String getDisplayType() {
@@ -228,81 +191,65 @@ public class CellPhone extends Phone implements IScreen, ICall, IMessage, ICharg
 		super.setDisplaySize(displaySize);
 	}
 
-
 	public String getOperatingSystem() {
 		return operatingSystem;
 	}
-
 
 	public void setOperatingSystem(String operatingSystem) {
 		this.operatingSystem = operatingSystem;
 	}
 
-
 	public int getNumberOfButtons() {
 		return numberOfButtons;
 	}
-
 
 	public void setNumberOfButtons(int numberOfButtons) {
 		this.numberOfButtons = numberOfButtons;
 	}
 
-
 	public Processor getProcessor() {
 		return processor;
 	}
-
 
 	public void setProcessor(Processor processor) {
 		this.processor = processor;
 	}
 
-
 	public Battery getBattery() {
 		return battery;
 	}
-
 
 	public void setBattery(Battery battery) {
 		this.battery = battery;
 	}
 
-
 	public Charger getCharger() {
 		return charger;
 	}
-
 
 	public void setCharger(Charger charger) {
 		this.charger = charger;
 	}
 
-
 	public User getUser() {
 		return user;
 	}
-
 
 	public void setUser(User user) {
 		this.user = user;
 	}
 
-
 	public Camera getCamera() {
 		return camera;
 	}
-
 
 	public void setCamera(Camera camera) {
 		this.camera = camera;
 	}
 
-
 	public Applications getApplications() {
 		return applications;
 	}
-
 
 	public void setApplications(Applications applications) {
 		this.applications = applications;
@@ -310,21 +257,12 @@ public class CellPhone extends Phone implements IScreen, ICall, IMessage, ICharg
 
 	@Override
 	public void charge() {
-	
-		
+
 	}
 
 	@Override
 	public void disconnectFromCharger() {
-	
-		
+
 	}
 
-	
-	
-	
-	
-	
-	
-	
 }

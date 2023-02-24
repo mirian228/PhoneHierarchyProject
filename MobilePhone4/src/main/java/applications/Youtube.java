@@ -1,5 +1,7 @@
 package applications;
 
+import java.util.Arrays;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -9,11 +11,11 @@ public class Youtube extends Applications {
 	private String[] playlist;
 	private String[] subscribedChannels;
 	private User user;
-	
+
 	public final static Logger LOGGER = LogManager.getLogger(Youtube.class);
 
-	public Youtube(boolean ios, boolean android, int size, String releaseDate, int notifications,
-			String[] playlist, String[] subscribedChannels) {
+	public Youtube(boolean ios, boolean android, int size, String releaseDate, int notifications, String[] playlist,
+			String[] subscribedChannels) {
 		super(ios, android, size, releaseDate, notifications);
 		this.playlist = playlist;
 		this.subscribedChannels = subscribedChannels;
@@ -21,69 +23,61 @@ public class Youtube extends Applications {
 
 	public Youtube(boolean ios, boolean android) {
 		super(ios, android);
-		}
+	}
 
-	public Youtube() {}
-	
-	
+	public Youtube() {
+	}
+
 	public void skipAdvertisment() {
 		int timeWatched = 0;
 		int timeRemaining = 0;
-		if(timeWatched >= 5 && timeRemaining <= 5) {
+		if (timeWatched >= 5 && timeRemaining <= 5) {
 			skipAdvertisment();
-		}
-		else {
+		} else {
 			LOGGER.info("Can't skip ad");
 		}
 	}
-	
+
 	public int fastForward(int time) {
 		int currentTime = 0;
 		return currentTime + time;
 	}
-	
-	
-	
+
 	public void stopVideo(String videoName) {
-		
+
 	}
+
 	public void playVideo(String videoName) {
-		
+
 	}
-	
+
 	public void downloadVideo(String videoName) {
-		
+
 	}
-	
+
 	public void subscribe(String channelName) {
-		
+
 	}
-	
+
 	public void deleteVideo(String videoName) {
 		videoName = null;
 	}
-	
-	
+
 	public void uploadVideo(String videoName) {
-		
+
 	}
-	
-	
-	
+
 	public String[] getPlaylist() {
 		return playlist;
 	}
-
 
 	public void setPlaylist(String[] playlist) {
 		this.playlist = playlist;
 	}
 
-
 	public String[] getSubscribedChannels() {
 		return subscribedChannels;
 	}
-
 
 	public void setSubscribedChannels(String[] subscribedChannels) {
 		this.subscribedChannels = subscribedChannels;
@@ -126,7 +120,7 @@ public class Youtube extends Applications {
 
 	@Override
 	public boolean isAndroid() {
-		
+
 		return super.isAndroid();
 	}
 
@@ -152,10 +146,12 @@ public class Youtube extends Applications {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Youtube [playlist=" + Arrays.toString(playlist) + ", subscribedChannels="
+				+ Arrays.toString(subscribedChannels) + ", user=" + user + "]";
+	}
 	
 
 }

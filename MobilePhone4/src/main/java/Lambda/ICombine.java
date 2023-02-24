@@ -1,4 +1,5 @@
 package Lambda;
+
 @FunctionalInterface
 public interface ICombine<T, A> {
 
